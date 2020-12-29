@@ -44,3 +44,7 @@ steps done:
     - add "<link rel="stylesheet" href="/css/app.css">" this to index.html which will be created on running the above config file
     - add "<script src="/js/app.js"></script>" which will also be created.
     - run command "npx webpack --config webpack.config.js"
+
+    ["build": "webpack",
+    "start:dev": "webpack-dev-server"] add these lines to package.json under "scripts"
+    and run command going inside  node_modules/.bin/ and run : npm start or [npm run start dev] this will give dynamic run and package everything up.
