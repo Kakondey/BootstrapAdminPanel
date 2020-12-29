@@ -1,0 +1,46 @@
+node_modules/
+
+
+
+steps done:
+    - npm init and add details
+    - npm install webpack
+    - npm install webpack-cli --save-dev
+    - npm install webpack-dev-server --save-dev [this is developement server]
+    - npm install @fortawesome/fontawesome-free --save-dev
+    - create a webpack.config.js file and type "npx webpack --config webpack.config.js"
+    - npm install 
+    - npm install fibers --save-dev
+    - npm install sass --save-dev
+    - npm install sass-loader node-sass css-loader autoprefixer postcss-loader --save-dev
+    - npm install mini-css-extract-plugin --save-dev
+    - npm install bootstrap
+    - npm install --save jquery popper.js (not doing save dev here because they are not part of dev files but is part of production file)
+    - npm install file-loader --save-dev
+
+    -folder structure of source:
+        -src
+            -demo
+                -css
+                -fonts
+                -js
+                    -plugins
+            -index.html
+
+            -js
+                -app.js
+                -custom.js
+
+            -scss
+                -app
+                    -componenets
+                    -pages
+                    -vendor
+                -_customize-bootstrap.scss
+                -_vasrs.scss
+                -main.scss
+
+    - add the code inside webpack.config.js file
+    - add "<link rel="stylesheet" href="/css/app.css">" this to index.html which will be created on running the above config file
+    - add "<script src="/js/app.js"></script>" which will also be created.
+    - run command "npx webpack --config webpack.config.js"
